@@ -37,7 +37,8 @@
   </div>
 
   <!-- Code for the login page -->
-  
+
+  {% block content %}
   <section class="h-100 gradient-form" style="background-color: #eee;">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -53,9 +54,9 @@
                   <h4 class="mt-1 mb-5 pb-1">We are Food Refined TT</h4>
                 </div>
 
-                <form>
+                <form id= "loginForm" method="POST" action="/login">
                   <p>Please login to your account</p>
-
+                  
                   <div class="form-outline mb-4">
                     <input type="email" id="form2Example11" class="form-control"
                       placeholder="Username" />
@@ -68,8 +69,7 @@
                   </div>
 
                   <div class="text-center pt-1 mb-5 pb-1">
-                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
-                      in</button>
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Login</button>
                     <a class="text-muted" href="#!">Forgot password?</a>
                   </div>
 
@@ -85,8 +85,8 @@
             <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
               <div class="text-white px-3 py-4 p-md-5 mx-md-4">
                 <h4 class="mb-4">We are focused on reducing food wastage</h4>
-                <p class="small mb-0"> It was discovered that for such a small                   country, Trinidad and Tobago (as well as Caribbean countries                   and Latin America combined), we waste about 50 million tons                    of food annually. 
-                  This results in, not only an environmental problem but an                      economical one too. With FoodRefinedTT, we look to lower the                   amount of food disposed.</p>
+                <p class="small mb-0">It was discovered that for such a small                  country, Trinidad and Tobago (as well as Caribbean countries                  and Latin America combined), we waste about 50 million tons                   of food annually. 
+                 This results in, not only an environmental problem but an                     economical one too. With FoodRefinedTT, we look to lower the                  amount of food disposed.</p>
               </div>
             </div>
           </div>
@@ -95,5 +95,6 @@
     </div>
   </div>
 </section>
+{% endblock %}
 
   

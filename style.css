@@ -3,15 +3,18 @@ html {
   width: 100%;
 }
 
-
+/*NAV BAR CSS */
 .topnav{
   writing-mode: horizontal-tb;
   padding-block: 10px 7px;
-  background-color:#63bfa1;
+  background-color:#63bfa1; /*#63bfa1*/
+  border-radius: 30px;
 
   /*comment first*/
   font-family: Bangers; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
 }
+
+/*heading above nav bar */
 
 h1{
   background-color:#26ab91;
@@ -21,29 +24,52 @@ h1{
   font-family: Bangers, font-size:20px; 
 }
 
-ul {
-      list-style-type: none;
+/*navbar formatting */
+.topnav ul {
+      
+      /*list-style-type: none;
       overflow: hidden;
       padding-block: 20px 3px;
       background-color: #63bfa1; 
       text-align: center;
-      font-size: 2px;
+      font-size: 2px;*/
+
+      overflow: auto;
+      
     }
     
-li {
+.topnav li {
       float: left;
-    }
-li a {
-      display: block;
-      color: #100f0f;
-      text-align: center;
-      padding: 1px 10px;
-      font-family: "East Sea Dokdo", sans-serif; font-size: 20px;
+      list-style: none;
+      margin: 13px 20px;
     }
 
-li a:hover {
-            background-color: #0db5df;
+.topnav li a {
+      /*display: block;*/
+      color: #100f0f;
+      text-align: left;
+      text-decoration: none;
+      padding: 1px 10px;
+    }
+
+.topnav li a:hover {
+            color: #097d07;
           }
+
+.search {
+  float: right;
+  color: white;
+  padding: 12 px 75 px;
+}
+
+.topnav input{
+  border: 2px solid black;
+  border-radius: 14px;
+  padding: 3px 17px;
+  width: 129px;
+}
+
+
 /*nav bar code end*/    
 
 
@@ -89,10 +115,15 @@ li a:hover {
 }
 */
 
-
+/*BACKGROUND*/
+/*
 body{
   background: url("background.jpg");
   background-blend-mode: exclusion;
+} */
+body{
+  background-image: url("background.jpg");
+  height: 100vh;
 }
 
 
@@ -105,19 +136,22 @@ body{
 /*FAQ page */
 .FAQ-page{
   text-align: left;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,91,1) 84%);
 }
 .q1{
   text-align: left;
+  
 }
 .q2{
   text-align: left;
 }
 .q3{
-  text-align: right;
+  text-align: left;
    
 }
 .q4{
-  text-align: right;
+  text-align: left;
 }
 
 
@@ -139,4 +173,30 @@ body{
 }
 .myRange{
   position: center;
+}
+
+
+/*Login style code*/
+
+.gradient-custom-2 {
+/* fallback for old browsers */
+background: #f3eee7;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, #b6f2c5, #3eaa3c, #95b946, #3a5f1c);
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, #b6f2c5, #3eaa3c, #95b946, #3a5f1c);
+}
+
+@media (min-width: 768px) {
+.gradient-form {
+height: 100vh !important;
+}
+}
+@media (min-width: 769px) {
+.gradient-custom-2 {
+border-top-right-radius: .3rem;
+border-bottom-right-radius: .3rem;
+}
 }
