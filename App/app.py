@@ -53,19 +53,17 @@ def loadConfig(app, config):
     for key, value in config.items():
         app.config[key] = config[key]
 
-def create_app(config={}):
+def create_app():
   app = Flask(__name__, static_url_path='/static')
-  CORS(app)
-  loadConfig(app, config)
   app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
   app.config['TEMPLATES_AUTO_RELOAD'] = True
+  app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(app.root_path, 'data.db')
+  app.config['DEBUG'] = True
+  app.config['SECRET_KEY'] = 'MySecretKey'
   app.config['PREFERRED_URL_SCHEME'] = 'https'
-  app.config['UPLOADED_PHOTOS_DEST'] = "App/uploads"
-  photos = UploadSet('photos', TEXT + DOCUMENTS + IMAGES)
-  configure_uploads(app, photos)
-  add_views(app, views)
-  create_db(app)
-  setup_jwt(app)
+  db.init_app(app)
+  login_manager.init_app(app)
+  login_manager.login_view = "login_page"
   app.app_context().push()
   return app
 
