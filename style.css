@@ -122,7 +122,7 @@ body{
   background-blend-mode: exclusion;
 } */
 body{
-  background-image: url("background.jpg");
+  background-image: url("background1.jpg");
   height: 100vh;
 }
 
