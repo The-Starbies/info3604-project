@@ -1,41 +1,7 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Food Refined TT</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  
- <!--      <div class = "header"> </h1>Food RefinedTT</h1> </div>-->
-</head>
+{% extends "base.html" %}
 
-
-
-<body>
-   <link href="//fonts.googleapis.com/css?family=Bangers" rel="stylesheet" type="text/css" />
-  
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <!--
-  <div class = "header">
-    </h1>Food RefinedTT</h1>
-  </div> -->
-
-  <!--<A HREF="pages/about.html">About this site</A> -->
-  <div class="topnav"> 
-
-    <h1> Food Refined TT</h1>
-    <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="contact.html">Contact Us </a></li>
-    <li><a href="shelters.html">Shelters</a></li>
-    <li><a href="FAQ.html">FAQ</a></li>
-    <li><a href="login.html">Login/Sign Up</a></li>
-    <input type="text" placeholder="Search..">
-    </ul>
-  </div>
-
+  {% block temp %}
   <!-- Code for the login page -->
   
   <section class="h-100 gradient-form" style="background-color: #eee;">
@@ -53,29 +19,31 @@
                   <h4 class="mt-1 mb-5 pb-1">We are Food Refined TT</h4>
                 </div>
 
-                <form>
+                <form action="/login" method="POST">
                   <p>Please login to your account</p>
 
                   <div class="form-outline mb-4">
                     <input type="email" id="form2Example11" class="form-control"
-                      placeholder="Username" />
+                      placeholder="email" name="email" />
                     <label class="form-label" for="form2Example11">Username</label>
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="password" id="form2Example22" class="form-control" />
+                    <input type="password" id="form2Example22" class="form-control" name="password"/>
                     <label class="form-label" for="form2Example22">Password</label>
                   </div>
 
                   <div class="text-center pt-1 mb-5 pb-1">
-                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
+                    <button type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
                       in</button>
                     <a class="text-muted" href="#!">Forgot password?</a>
                   </div>
 
                   <div class="d-flex align-items-center justify-content-center pb-4">
                     <p class="mb-0 me-2">Don't have an account?</p>
+                    <a href="/register">
                     <button type="button" class="btn btn-outline-danger">Create new</button>
+                    </a>
                   </div>
 
                 </form>
@@ -96,4 +64,4 @@
   </div>
 </section>
 
-  
+  {% endblock %}
