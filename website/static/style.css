@@ -197,26 +197,38 @@ body{
 /*FAQ page */
 .FAQ-page{
   margin-top: 1.3vw;
-  text-align: left;
-  background: rgb(63,94,251);
-  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,91,1) 84%);
-}
-.q1{
-  text-align: left;
+  text-align: center;
   
 }
-.q2{
-  text-align: left;
-}
-.q3{
-  text-align: left;
-   
-}
-.q4{
-  text-align: left;
-}
 
-
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: center;
+  background-color: #07a737;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+  display: block;}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
 
 /*shelter page*/
 .shelter-heading{
