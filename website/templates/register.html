@@ -14,7 +14,7 @@
               <div class="card-body p-md-5 mx-md-4">
 
                 <div class="text-center">
-                  <img src="logo.jpg"
+                  <img src="{{ url_for('static', filename='FRTT.png') }}"
                     style="width: 185px;" alt="logo">
                   <h4 class="mt-1 mb-5 pb-1">We are Food Refined TT</h4>
                 </div>
@@ -64,9 +64,9 @@
                   </div>
 
                   <div id="wrapper">
-                    <label class="space-wrapper" for="yes_no_radio">Are you a resturant, shelter or other?</label>
+                  <label class="space-wrapper" for="yes_no_radio">Are you a restaurant or shelter?</label>
                  
-                  <input type="radio" name="yes_no_radio" value="resturant" checked>resturant</input>
+                  <input type="radio" name="yes_no_radio" value="restaurant" checked>restaurant</input>
                  
                   <input type="radio" name="yes_no_radio" value="shelter">shelter</input>
 

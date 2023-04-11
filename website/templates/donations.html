@@ -4,14 +4,22 @@
 <section class="h-100 gradient-form donation-section">
     <div class="center">
     <h2 >Donations</h2>
-    <h4>Thank You For Donating!</h4>
-    <h6>Items to be donated</h6>
+    <h4>Please input your information below</h4>
     <div class="selection">
     <form action="">
-        <label for="options">Options</label>
+        <label for="options">Donation item</label>
 
         <select name="options" id="options">
-          <option value="test">Test</option>
+          <option value="breakfast">Breakfast items</option>
+          <option value="lunch">Lunch items</option>
+          <option value="dinner">Dinner items</option>
+        </select> 
+
+        <label for="diet">Any Dietary Restrictions?</label>
+
+        <select name="diet" id="diet">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
         </select> 
 
         <label for="pickup">PickUp/Delivery</label>
@@ -22,7 +30,10 @@
         </select>
 
         <div >
-            <button type="submit" class="donate-button" type="button" style="border-radius: 25px; width: 200px; margin-top: 15px;">Donate</button>
+
+            <a href="/">
+              <button type="submit" class="donate-button" type="button" style="border-radius: 25px; width: 200px; margin-top: 15px;">Donate</button>
+            </a>
             
           </div>
     </form>
