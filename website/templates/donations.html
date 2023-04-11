@@ -13,6 +13,7 @@
           <option value="breakfast">Breakfast items</option>
           <option value="lunch">Lunch items</option>
           <option value="dinner">Dinner items</option>
+          <option value="non-perishables">Non-perishable items</option>
         </select> 
 
         <label for="diet">Any Dietary Restrictions?</label>
@@ -22,6 +23,13 @@
           <option value="no">No</option>
         </select> 
 
+        <label for="food-prep">When was your donation prepared?</label>
+
+        <select name="food-prep" id="food-prep">
+          <option value="yesterday">Yesterday</option>
+          <option value="today">Today</option>
+        </select> 
+
         <label for="pickup">PickUp/Delivery</label>
 
         <select name="pickup" id="pickup">
@@ -29,13 +37,13 @@
           <option value="delivery">Delivery</option>
         </select>
 
-        <div >
+        <div>
 
             <a href="/">
               <button type="submit" class="donate-button" type="button" style="border-radius: 25px; width: 200px; margin-top: 15px;">Donate</button>
             </a>
             
-          </div>
+        </div>
     </form>
     </div>
     </div>
