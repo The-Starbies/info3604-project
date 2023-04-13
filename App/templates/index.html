@@ -1,0 +1,73 @@
+<!--=======================THIS IS OUR HOME PAGE=========================-->
+
+{% extends "layout.html" %}
+{% block title %}Food Refined TT{% endblock %}
+{% block page %}Food Refined TT{% endblock %}
+
+{{ super() }}
+
+{% block content %}
+
+<!--Heading greeting for website-->
+<div class="typewriter">
+    <h1>We are Food Refined TT.</h1>
+</div>
+
+<!--Hero Section-->
+<section class="home" id="home">
+    <div class="content">
+      <h1>Help us reach <span class="green">Our Goal</span></h1>
+      <p>FoodRefined TT aims to donate 10,000 meals to shelters & homes to end hunger and food wastage in Trinidad and Tobago</p>
+      <a href="#" class="btn waves-effect waves-light">Learn more</a>
+    </div>
+    <div class="image">
+      <img src="{{url_for('static', filename='nobglogo.png')}}" alt="Food refined tt image" />
+    </div>
+  </section>
+
+<!--What can our application do?-->
+<section class="section services" id="services">
+    <div class="row container">
+      <div class="col">
+        <h2>Reduce food wastage</h2>
+        <p>
+            instead of disposing of quality meals, you can use our app to
+        </p>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="{{url_for('static', filename='donate.png')}}" alt="" />
+          <h3>
+            Donate <br />
+            to a shelter <br />
+            in need
+          </h3>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="{{url_for('static', filename='delivery.png')}}" alt="" />
+          <h3>
+            Get delivery <br />
+            for your   <br />
+            donations
+          </h3>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="{{url_for('static', filename='children.png')}}" alt="" />
+          <h3>
+            Contribute to <br />
+            ending hunger & <br />
+            food wastage in T&T
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+           
+
+{% endblock %}
