@@ -1,40 +1,20 @@
 {% extends "layout.html" %}
-{% block temp %}
+{% block content %}
 
-  <div class="shelter-heading">
-    <h2>Home/Shelters</h2>
-  </div>
+<div class="shelter-heading">
+  <h2>Shelters & Homes</h2>
+</div>
 
-  <div class="sh 1">
-    <img src="{{ url_for('static', filename='heart.svg') }}" class="heart-icon">
-    <h3>San Fernando Centre for Displaced Persons (SFCDPF)</h3>
+<div class="listing-card">
+  <img src="{{url_for('static', filename='sfshelter.png')}}" alt="Restaurant Image">
+  <div class="restaurant-info">
+    <h2>San Fernando Centre for Displaced Persons (SFCDPF)</h2>
+    <p>Description of the restaurant</p>
+    <p>Address: PTSC Bus Terminal Building, Lady Hailes Ave, San Fernando</p>
+    <p>Phone: 868-468-6237</p>
+    <a href="/donations"> <button class="donate-now-btn">Donate Now</button> </a>
     
-  <div class="donate-button-class">
-    <a href="/donations">
-    <button  class="donate-button-entry"> Donate Now </button>
-  </a>
   </div>
-  </div>
-
-  <div class="sh 2">
-    <img src="{{ url_for('static', filename='heart.svg') }}" class="heart-icon">
-    <h3>Jai Lakshmi Children Home</h3>
-  <div class="donate-button-class">
-    <a href="/donations">
-    <button  class="donate-button-entry"> Donate Now </button>
-  </a>
-  </div>
-  </div>
-
-  <div class="sh 3">
-    <img src="{{ url_for('static', filename='heart.svg') }}" class="heart-icon">
-    <h3>Homeless Assistance Office</h3>
-    
-  <div class="donate-button-class">
-    <a href="/donations">
-    <button  class="donate-button-entry"> Donate Now </button>
-  </a>
-  </div>
-  </div>
+</div>
   
 {% endblock %}

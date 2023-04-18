@@ -106,14 +106,188 @@ section {
   transform: translateY(-3px);
   box-shadow: var(--box-shadow);
 }
-/* =========== Services =========== */
+
+/* =========== Login =============*/
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #f3eee7;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #b6f2c5, #3eaa3c, #95b946, #3a5f1c);
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #b6f2c5, #3eaa3c, #95b946, #3a5f1c);
+  }
+  
+  @media (min-width: 768px) {
+  .gradient-form {
+  height: 100vh !important;
+  }
+  }
+  @media (min-width: 769px) {
+  .gradient-custom-2 {
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  }
+  }
+
+/* =========== Shelters =========== */
+.shelter-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.listing-card {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.restaurant-info {
+  padding: 0 20px;
+}
+
+.restaurant-info h2 {
+  margin: 0;
+}
+
+.restaurant-info p {
+  margin: 5px 0;
+}
+
+.donate-now-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.donate-now-btn:hover {
+  background-color: #3e8e41;
+}
 
 
+/* =========== Donation =========== */
+.donation-section{
+  background-image: url("background2.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
 
+.center{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/* =========== About =========== */
+.donation-section h2{
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
 
-/* =========== App =========== */
+.donation-section h4{
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+
+.donation-section h6{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.donation-section .selection form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.donation-section .selection form label{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+} 
+
+.donation-section .selection form select{
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  width: 300px;
+  height: 60px;
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+/* =========== FAQ =========== */
+.FAQ-page{
+  margin-top: 1.3vw;
+  text-align: center;
+  
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: center;
+  background-color: #07a737;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+  display: block;}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
 
 /* =========== Footer =========== */
 
