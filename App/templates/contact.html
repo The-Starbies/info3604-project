@@ -1,24 +1,49 @@
-{% extends "base.html" %}
+{% extends "layout.html" %}
 {% block content %}
 
   <!-- CONTACT PAGE INFO -->
-  <div class="contact-page">
-   <h2>Contact Page</h2>
-   <br></br>
-   <h3>Phone Numbers</h3>
-    <p>1(868) 456-7890</p>
-
-   <h3>Email Address</h3>
-   <address>
-    <a href="mailto:foodrefinedtt@gmail.com">FoodRefinedTT</a>
-   </address>
-    
-
-   <h3>Social Media</h3>
-    <a href="https://instagram.com/foodrefinedtt?igshid=YmMyMTA2M2Y=">Instagram</a>
-  
-<br></br>
-    <img src="{{ url_for('static', filename='letsgetsocial.jpg') }}" alt="Lets get social!">
+  <div class="container">
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Send us a message: </p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="{{url_for('static', filename='nobglogo.png')}}" style="height:70%">
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
   </div>
+
+<!--Social media links etc-->
+  <div class="contact-links">
+    <i class="material-icons">phone</i>
+    <a href="tel:868-770-3221" id="anchor-tag">Call Us</a> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+
+    <i class="material-icons" id="anchor-tag">email</i>
+   
+    <a href="mailto:foodrefinedtt@gmail.com" id="anchor-tag">Email Us</a> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+   
+
+   <a href="https://instagram.com/foodrefinedtt?igshid=YmMyMTA2M2Y=" id="anchor-tag" class= "fa fa-instagram"> Find us on instagram</a> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+
+ </div>
+ 
+
+  
+
+<br></br>
+  <img src="{{ url_for('static', filename='letsgetsocial.png') }}" alt="Lets get social!">
 
 {% endblock %}
