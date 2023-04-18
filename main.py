@@ -15,7 +15,22 @@ from App.controllers import (
     setup_flask_login
 )
 
-from App.views import views
+from App.views import (
+    auth_views,
+    shelter_views,
+    index_views,
+    donation_views,
+    faq_views
+)
+
+
+views = [
+    auth_views,
+    index_views,
+    shelter_views,
+    donation_views,
+    faq_views
+]
 
 def add_views(app):
     for view in views:
