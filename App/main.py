@@ -20,8 +20,7 @@ from App.views import (
     shelter_views,
     index_views,
     donation_views,
-    faq_views,
-    contact_views
+    faq_views
 )
 
 
@@ -30,8 +29,7 @@ views = [
     index_views,
     shelter_views,
     donation_views,
-    faq_views,
-    contact_views
+    faq_views
 ]
 
 def add_views(app):
