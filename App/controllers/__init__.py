@@ -1,2 +1,3 @@
-from .user import *
-from .auth import *
+from .userController import *
+from .authController import *
+from .shelterController import *
