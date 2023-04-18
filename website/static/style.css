@@ -1,0 +1,391 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/*NAV BAR CSS */
+.topnav{
+  writing-mode: horizontal-tb;
+  padding-block: 10px 7px;
+  background-color:#63bfa1; /*#63bfa1*/
+  border-radius: 30px;
+
+  /*comment first*/
+  font-family: Bangers; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+}
+
+/*heading above nav bar */
+
+h1{
+  background-color:#26ab91;
+  writing-mode: horizontal-tb;
+  padding-inline: 20px 30px;
+  text-align: center;
+  font-family: Bangers; 
+  font-size:20px; 
+}
+
+/*navbar formatting */
+.topnav ul {
+      
+      /*list-style-type: none;
+      overflow: hidden;
+      padding-block: 20px 3px;
+      background-color: #63bfa1; 
+      text-align: center;
+      font-size: 2px;*/
+
+      overflow: auto;
+      
+    }
+
+.alert h4{
+  background-color: white;
+  padding: 10px;
+  color: red;
+}
+.alert-success h4{
+  background-color: white;
+  padding: 10px;
+  color: greenyellow;
+}
+.space-wrapper{
+  margin-right: 15px;
+}
+.topnav li {
+      float: left;
+      list-style: none;
+      margin: 13px 20px;
+    }
+
+.topnav li a {
+      /*display: block;*/
+      color: #100f0f;
+      text-align: left;
+      text-decoration: none;
+      padding: 1px 10px;
+    }
+
+.topnav li a:hover {
+            color: #097d07;
+          }
+
+.search {
+  float: right;
+  color: white;
+  padding: 12 px 75 px;
+}
+
+.topnav input{
+  border: 2px solid black;
+  border-radius: 14px;
+  padding: 3px 17px;
+  width: 129px;
+}
+
+
+/*nav bar code end*/    
+
+
+.greeting{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* DONATE BUTTON */
+.donate-button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  background: #1E6A2E;
+  font-family: Bangers;
+  font-size: 2em;
+  color: white;
+  cursor: pointer; 
+}
+
+/*Pictures for main page*/
+.picture-parent{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+.picture-child{
+  margin: 2vw;
+}
+
+.greeting .heading{
+  color: #08530D;
+  font-size: 30px;
+}
+
+.pic1{
+    /*picture sizing*/
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+.sh .donate-button-entry{
+  position: absolute;
+  background-color: #1E6A2E; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: 1000;
+  align-items: center;
+  justify-content: center;
+  left: 70vw;
+}
+.donate-button-entry{
+  position: absolute;
+  background-color: #1E6A2E; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.donate-button-class{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*
+.backimg{
+  opacity: 0.5;
+}
+*/
+
+/*BACKGROUND*/
+/*
+body{
+  background: url("background.jpg");
+  background-blend-mode: exclusion;
+} */
+body{
+  background: url("foodbg.jpg");
+  height: 100vh;
+}
+
+
+/*Contact Page CSS */
+.contact-page{
+  text-align:center
+}
+
+
+/*FAQ page */
+.FAQ-page{
+  margin-top: 1.3vw;
+  text-align: center;
+  
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: center;
+  background-color: #07a737;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+  display: block;}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+/*shelter page*/
+.shelter-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.shelter-heading h2{
+  font-weight: bold;
+}
+.sh{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: center;
+  font-size: 25px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+
+.slider{
+  position: absolute;
+  left: 45vw;
+  margin-right: 13vw;
+}
+
+.slider h4{
+  position: absolute;
+}
+
+.sh h3{
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.heart-icon{
+  width: 40px;
+  margin-right: 10px;
+}
+
+.sh2{
+  font-size: 25px;
+  text-align: left;
+}
+
+.sh3{
+  font-size: 25px;
+  text-align: left;
+}
+.myRange{
+  position: center;
+}
+
+/*Donations */
+
+.donation-section{
+  background-image: url("background2.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.center{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donation-section h2{
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.donation-section h4{
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+
+.donation-section h6{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.donation-section .selection form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.donation-section .selection form label{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+} 
+
+.donation-section .selection form select{
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  width: 300px;
+  height: 60px;
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+/*Login style code*/
+
+.gradient-custom-2 {
+/* fallback for old browsers */
+background: #f3eee7;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, #b6f2c5, #3eaa3c, #95b946, #3a5f1c);
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, #b6f2c5, #3eaa3c, #95b946, #3a5f1c);
+}
+
+@media (min-width: 768px) {
+.gradient-form {
+height: 100vh !important;
+}
+}
+@media (min-width: 769px) {
+.gradient-custom-2 {
+border-top-right-radius: .3rem;
+border-bottom-right-radius: .3rem;
+}
+}
