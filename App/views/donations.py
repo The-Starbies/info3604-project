@@ -6,3 +6,7 @@ donation_views = Blueprint('donation_views', __name__, template_folder='../templ
 @donation_views.route('/donations', methods=['GET'])
 def get_donation_page():
     return render_template('donations.html')
+
+@donation_views.route('/thankyou', methods=['GET'])
+def get_thankyou_page():
+    return render_template('thankyou.html')

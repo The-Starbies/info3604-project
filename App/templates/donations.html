@@ -2,51 +2,55 @@
 {% block content %}
 
 <section class="h-100 gradient-form donation-section">
-    <div class="center">
-    <h2 >Donations</h2>
-    <h4>Please input your information below</h4>
-    <div class="selection">
-    <form action="">
-        <label for="options">Donation item</label>
+  <div class="center">
+  <h2 >Donations</h2>
+  <h4>Please input your information below</h4>
+  <div class="selection">
+  <form action="">
 
-        <select name="options" id="options">
-          <option value="breakfast">Breakfast items</option>
-          <option value="lunch">Lunch items</option>
-          <option value="dinner">Dinner items</option>
-          <option value="non-perishables">Non-perishable items</option>
-        </select> 
+    <label for="name">Organization name</label>
 
-        <label for="diet">Any Dietary Restrictions?</label>
+    <input type="text" id="name" name="name" placeholder="Your organization's name">
 
-        <select name="diet" id="diet">
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
-        </select> 
+      <label for="options">Donation item</label>
 
-        <label for="food-prep">When was your donation prepared?</label>
+      <select name="options" id="options">
+        <option value="breakfast">Breakfast items</option>
+        <option value="lunch">Lunch items</option>
+        <option value="dinner">Dinner items</option>
+        <option value="non-perishables">Non-perishable items</option>
+      </select> 
 
-        <select name="food-prep" id="food-prep">
-          <option value="yesterday">Yesterday</option>
-          <option value="today">Today</option>
-        </select> 
+      <label for="diet">Any Dietary Restrictions?</label>
 
-        <label for="pickup">PickUp/Delivery</label>
+      <select name="diet" id="diet">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select> 
 
-        <select name="pickup" id="pickup">
-          <option value="pickup">Pick-Up</option>
-          <option value="delivery">Delivery</option>
-        </select>
+      <label for="food-prep">When was your donation prepared?</label>
+      <input type="date" id="food-prep" name="food-prep">
 
-        <div>
+      <label for="pickup">PickUp/Delivery</label>
 
-            <a href="/">
-              <button type="submit" class="donate-button" type="button" style="border-radius: 25px; width: 200px; margin-top: 15px;">Donate</button>
-            </a>
-            
-        </div>
-    </form>
-    </div>
-    </div>
-  </section>
+      <select name="pickup" id="pickup">
+        <option value="pickup">Pick-Up</option>
+        <option value="delivery">Delivery</option>
+      </select>
+
+      <label for="collection-date">Desired Collection Date</label>
+      <input type="date" id="collection-date" name="collection-date">
+
+      <div>
+
+          <a href="/thankyou">
+            <button type="submit" class="donate-button" type="button" style="border-radius: 25px; width: 200px; margin-top: 15px;">Donate</button>
+          </a>
+          
+      </div>
+  </form>
+  </div>
+  </div>
+</section>
 
 {% endblock %}
